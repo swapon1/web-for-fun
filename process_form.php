@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars($_POST["message"]);
     
     // Build the email content
-    $to = "swapon.das@yahoo.com"; // Replace with your email address
+    $to = "swapon.das@yahoo.com"; // 
     $subject = "New Contact Form Submission";
     $body = "Name: $name\nEmail: $email\nMessage:\n$message";
     $headers = "From: $email";
@@ -19,6 +19,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 } else {
     // If the form is not submitted, redirect to the form page
-    header("Location: contact_form.html");
+    header("Location: index.html");
 }
 ?>
